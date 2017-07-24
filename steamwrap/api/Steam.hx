@@ -149,10 +149,12 @@ class Steam
 			SteamWrap_RequestGlobalStats();
 			
 			//initialize other API's:
-			ugc = new UGC(appId, customTrace);
-			controllers = new Controller(customTrace);
-			cloud = new Cloud(appId, customTrace);
-			workshop = new Workshop(appId, customTrace);
+			// Commenting out for The Wolf's Bite Release
+			// These other API's do not work on Mac right now, and we just need achievements
+			// ugc = new UGC(appId, customTrace);
+			// controllers = new Controller(customTrace);
+			// cloud = new Cloud(appId, customTrace);
+			// workshop = new Workshop(appId, customTrace);
 		}
 		else {
 			customTrace("Steam failed to activate");
